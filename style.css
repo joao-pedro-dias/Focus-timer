@@ -1,0 +1,124 @@
+:root{
+    font-size: 62.5%;
+    --font-primary: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    height: 100vh;
+    width: 120rem;
+
+    display: grid;
+    grid-template-areas: "A B";
+    gap: 19.2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.container div:nth-child(1) {
+    grid-area: A;
+}
+
+.container div:nth-child(2) {
+    grid-area: B;
+}
+
+.container .grid-left{
+    margin: auto;
+    grid-template-areas: "A B C D E";
+    gap: 19.2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.grid-left div:nth-child(1){
+    grid-area: A;
+}
+
+.grid-left div:nth-child(2){
+    grid-area: B;
+}
+
+.grid-left div:nth-child(3){
+    grid-area: C;
+}
+
+.grid-left div:nth-child(4){
+    grid-area: D;
+}
+
+.grid-left div:nth-child(5){
+    grid-area: E;
+}
+
+.grid-right{
+    grid-template-areas: 
+    "A B"
+    "C D";
+    display: grid;
+}
+
+.grid-right div:nth-child(1) {
+    grid-area: A;
+}
+
+.grid-right div:nth-child(2) {
+    grid-area: B;
+}
+
+.grid-right div:nth-child(3) {
+    grid-area: C;
+}
+
+.grid-right div:nth-child(4) {
+    grid-area: D;
+}
+
+.grid-right button path:hover{
+    fill: #02799D;
+}
+
+.hide {
+    display: none;
+}
+
+button{
+    border-style: none;
+    padding: 3.2rem;
+    background: transparent;
+}
+
+.timer{
+    text-align: center;
+}
+
+.timer span{
+    font-size: 13.0rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #323238;
+}
+
+img{
+    cursor: pointer;
+}
+
+.buttons-icon img:hover{
+    background: #02799D;
+}
+
+.buttons-icon img{
+    background: #E1E1E6;
+    border-radius: 20%;
+}
+
+.button-pressed img{
+    background: #02799D;
+}
